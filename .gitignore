@@ -1,2 +1,5 @@
 venv
 tryApi
+.venv/
+__pycache__/
+*.pyc
