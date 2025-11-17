@@ -6,11 +6,12 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 target_id = 175
-display_name = "Updated name"
+display_name = "Updated again"
 hostname = os.getenv("HOST")
+model = "x_computer"
 
 response = requests.post(
-    f"http://{hostname}/json/2/x_computer/write",
+    f"http://{hostname}/json/2/{model}/write",
     headers={
         "Authorization": f"Bearer {api_key}",
         # "X-Odoo-Database": "...",

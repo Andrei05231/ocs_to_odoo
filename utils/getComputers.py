@@ -7,9 +7,10 @@ load_dotenv()
 
 api_key = os.getenv("API_KEY")
 hostname = os.getenv("HOST")
+model = "x_computer"
 
 response = requests.post(
-        f"http://{hostname}/json/2/x_computer/search_read",
+        f"http://{hostname}/json/2/{model}/search_read",
     headers={
         "Authorization": f"Bearer {api_key}",
         # "X-Odoo-Database": "...",
