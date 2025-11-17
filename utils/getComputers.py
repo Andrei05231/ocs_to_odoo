@@ -6,9 +6,10 @@ import requests
 load_dotenv()
 
 api_key = os.getenv("API_KEY")
+hostname = os.getenv("HOST")
 
 response = requests.post(
-    "http://odoo.artehnis.local/json/2/x_computer/search_read",
+        f"http://{hostname}/json/2/x_computer/search_read",
     headers={
         "Authorization": f"Bearer {api_key}",
         # "X-Odoo-Database": "...",
