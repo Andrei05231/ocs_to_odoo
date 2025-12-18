@@ -1,0 +1,5 @@
+2025-12-18 15:38:30,761 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-18 15:38:30,767 - $(name)s - INFO - Database connection succesfull
+2025-12-18 15:38:30,787 - $(name)s - ERROR - Database error: (1146, "Table 'ocsweb.hardware_updates' doesn't exist")
+2025-12-18 15:38:30,788 - $(name)s - INFO - No pending Changes
+2025-12-18 15:38:30,788 - $(name)s - INFO - Database conection closed
