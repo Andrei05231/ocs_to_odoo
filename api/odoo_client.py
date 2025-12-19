@@ -13,7 +13,7 @@ class OdooClient:
         try:
             headers = {
                 'Content-Type':'application/json',
-                'X-Odoo-Database':self.config.database,
+                'X-Odoo-Database':self.config.db,
                 }
             if self.config.key:
                 headers['Authorization'] = f"Bearer {self.config.key}"
@@ -21,14 +21,14 @@ class OdooClient:
             payload = {
                     'context' : {},
                     'payload' : {
-                    'computers': [ computer.format_for_odoo() for compute in computers ]
+                    'computers': [ computer.format_for_odoo() for computer in computers ]
                     }
                 }
 
             logger.info(f"Sending {len(computers)} computers to Odoo")
 
-            response = request.post(
-                self.config.endpoint,
+            response = requests.post(
+                self.config.host,
                 json = payload,
                 headers = headers,
                 timeout = 60

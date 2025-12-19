@@ -18,9 +18,17 @@ class Computer:
             'gpu':self.gpu,
             'memory':self.memory
         }
+    
+    @staticmethod
+    def process_video_data(video_data):
+        gpus = []
+        for video in video_data:
+            gpus.append( video.get('gpu','') )
+
+        return ', '.join(gpus)
 
     @classmethod
-    def process_ocs_data(cls, hardware_data, bios_data, vide_data, memory_data ):
+    def process_ocs_data( cls, hardware_data, bios_data, video_data, memory_data ):
         memory_str = ''
         if memory_data:
             stick_groups = Counter()
@@ -36,11 +44,10 @@ class Computer:
                     parts.append(f"{count}x{capacity}MB")
 
                 memory_str = " + ".join(parts)
-
         return cls(
             name = hardware_data.get('name',''),
             serial_number = bios_data.get('serialNumber',''),
             cpu = hardware_data.get('cpu',''),
-            gpu = video_data.get('gpu',''),
+            gpu = cls.process_video_data(video_data),
             memory = memory_str
             )

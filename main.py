@@ -60,7 +60,7 @@ def main():
                     batch_changes_ids.extend(hw_changes_ids)
 
             if computers:
-                if odoo.client.send_batch(computers, batch_changes_ids):
+                if odoo_client.send_batch(computers, batch_changes_ids):
                     if ocs_queries.mark_as_processed(batch_changes_ids):
                         total_sucessful += len(computers)
                     else:

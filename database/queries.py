@@ -20,7 +20,7 @@ class OCSQueries:
                         operation_type,
                         old_data,
                         new_data,
-                        chaged_at
+                        changed_at
                     FROM hardware_updates
                     WHERE processed = 0
                     ORDER BY changed_at ASC
@@ -67,7 +67,7 @@ class OCSQueries:
             cursor.execute(query, hardware_id)
             return cursor.fetchall()
 
-    def get_memory_info(self, harware_id):
+    def get_memory_info(self, hardware_id):
         with self.db.cursor() as cursor:
             query = """ 
                 SELECT CAPACITY as capacity,
@@ -93,15 +93,15 @@ class OCSQueries:
             return Computer.process_ocs_data(hardware, bios,video,memory)
         
         except Exception as e :
-            logger.error(f"Could not get computer info for : {hardware_id}")
+            logger.error(f"Could not get computer info for : {hardware_id}:{e}")
             return None
 
 
     def mark_as_processed(self,change_ids):
         try:
-            with self.sb.cursor() as cursor:
+            with self.db.cursor() as cursor:
                 query = """ 
-                    UPDATE hardware_update
+                    UPDATE hardware_updates
                     SET processed = 1, processed_at = NOW()
                     WHERE ID IN (%s)
                 """ % ','.join( ['%s'] * len(change_ids) ) 
@@ -114,9 +114,4 @@ class OCSQueries:
         except Exception as e:
             logger.error(f"Could not mark changes are processed:{e}")
             return False
-
-
-
-
-
 

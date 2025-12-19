@@ -3,3 +3,182 @@
 2025-12-18 15:38:30,787 - $(name)s - ERROR - Database error: (1146, "Table 'ocsweb.hardware_updates' doesn't exist")
 2025-12-18 15:38:30,788 - $(name)s - INFO - No pending Changes
 2025-12-18 15:38:30,788 - $(name)s - INFO - Database conection closed
+2025-12-19 08:52:17,351 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 08:52:17,353 - $(name)s - INFO - Database connection succesfull
+2025-12-19 08:52:17,371 - $(name)s - ERROR - Database error: (1054, "Unknown column 'chaged_at' in 'field list'")
+2025-12-19 08:52:17,371 - $(name)s - INFO - No pending Changes
+2025-12-19 08:52:17,371 - $(name)s - INFO - Database conection closed
+2025-12-19 08:59:04,587 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 08:59:04,588 - $(name)s - INFO - Database connection succesfull
+2025-12-19 08:59:04,589 - $(name)s - INFO - Got 0 pending changes
+2025-12-19 08:59:04,590 - $(name)s - INFO - No pending Changes
+2025-12-19 08:59:04,590 - $(name)s - INFO - Database conection closed
+2025-12-19 09:58:14,871 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 09:58:14,879 - $(name)s - INFO - Database connection succesfull
+2025-12-19 09:58:14,884 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 09:58:14,884 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 09:58:14,888 - $(name)s - ERROR - Database error: name 'hardware_id' is not defined
+2025-12-19 09:58:14,888 - $(name)s - ERROR - Could not get computer info for : 35
+2025-12-19 09:58:14,889 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 09:58:14,889 - $(name)s - INFO - Database conection closed
+2025-12-19 10:04:39,648 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:04:39,650 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:04:39,650 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:04:39,651 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:04:39,775 - $(name)s - ERROR - Could not get computer info for : 35
+2025-12-19 10:04:39,775 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:04:39,775 - $(name)s - INFO - Database conection closed
+2025-12-19 10:06:50,170 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:06:50,172 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:06:50,172 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:06:50,173 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:06:50,174 - $(name)s - ERROR - Could not get computer info for : 35:name 'video_data' is not defined
+2025-12-19 10:06:50,174 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:06:50,175 - $(name)s - INFO - Database conection closed
+2025-12-19 10:08:21,930 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:08:21,931 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:08:21,932 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:08:21,932 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:08:21,935 - $(name)s - ERROR - Could not get computer info for : 35:'list' object has no attribute 'get'
+2025-12-19 10:08:21,935 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:08:21,935 - $(name)s - INFO - Database conection closed
+2025-12-19 10:09:50,508 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:09:50,510 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:09:50,511 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:09:50,511 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:09:50,514 - $(name)s - ERROR - Could not get computer info for : 35:name 'logger' is not defined
+2025-12-19 10:09:50,514 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:09:50,514 - $(name)s - INFO - Database conection closed
+2025-12-19 10:10:56,537 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:10:56,538 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:10:56,539 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:10:56,539 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:10:56,542 - $(name)s - ERROR - Could not get computer info for : 35:name 'logging' is not defined
+2025-12-19 10:10:56,542 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:10:56,542 - $(name)s - INFO - Database conection closed
+2025-12-19 10:11:08,382 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:11:08,383 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:11:08,384 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:11:08,384 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:11:08,387 - $(name)s - ERROR - Could not get computer info for : 35:'list' object has no attribute 'get'
+2025-12-19 10:11:08,387 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:11:08,387 - $(name)s - INFO - Database conection closed
+2025-12-19 10:15:52,447 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:15:52,449 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:15:52,450 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:15:52,450 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:15:52,453 - $(name)s - ERROR - Could not get computer info for : 35:name 'process_video_data' is not defined
+2025-12-19 10:15:52,453 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:15:52,453 - $(name)s - INFO - Database conection closed
+2025-12-19 10:16:57,183 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:16:57,184 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:16:57,185 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:16:57,186 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:16:57,188 - $(name)s - ERROR - Could not get computer info for : 35:process_ocs_data() missing 1 required positional argument: 'memory_data'
+2025-12-19 10:16:57,188 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:16:57,189 - $(name)s - INFO - Database conection closed
+2025-12-19 10:17:23,826 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:17:23,827 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:17:23,829 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:17:23,830 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:17:23,833 - $(name)s - ERROR - Could not get computer info for : 35:name 'self' is not defined
+2025-12-19 10:17:23,833 - $(name)s - INFO - Sync complete: 0 sent, 0 failed
+2025-12-19 10:17:23,834 - $(name)s - INFO - Database conection closed
+2025-12-19 10:21:07,373 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:21:07,374 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:21:07,375 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:21:07,375 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:21:07,377 - $(name)s - ERROR - Error in the main send function: name 'odoo' is not defined
+2025-12-19 10:21:07,377 - $(name)s - INFO - Database conection closed
+2025-12-19 10:21:30,372 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:21:30,374 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:21:30,375 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:21:30,375 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:21:30,377 - $(name)s - ERROR - Error in the main send function: name 'odoo' is not defined
+2025-12-19 10:21:30,377 - $(name)s - INFO - Database conection closed
+2025-12-19 10:22:22,655 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:22:22,657 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:22:22,658 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:22:22,658 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:22:22,661 - $(name)s - ERROR - Error sending computer to Odoo: 'OdooConfig' object has no attribute 'database'
+2025-12-19 10:22:22,661 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:22:22,661 - $(name)s - INFO - Database conection closed
+2025-12-19 10:24:19,120 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:24:19,184 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:24:19,186 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:24:19,187 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:24:19,190 - $(name)s - ERROR - Error sending computer to Odoo: name 'computer' is not defined
+2025-12-19 10:24:19,190 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:24:19,191 - $(name)s - INFO - Database conection closed
+2025-12-19 10:24:54,300 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:24:54,302 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:24:54,303 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:24:54,303 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:24:54,305 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:24:54,305 - $(name)s - ERROR - Error sending computer to Odoo: name 'request' is not defined
+2025-12-19 10:24:54,305 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:24:54,305 - $(name)s - INFO - Database conection closed
+2025-12-19 10:25:11,391 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:25:11,392 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:25:11,393 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:25:11,393 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:25:11,396 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:25:11,396 - $(name)s - ERROR - Error sending computer to Odoo: 'OdooConfig' object has no attribute 'endpoint'
+2025-12-19 10:25:11,396 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:25:11,397 - $(name)s - INFO - Database conection closed
+2025-12-19 10:25:38,007 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:25:38,009 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:25:38,010 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:25:38,011 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:25:38,014 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:25:38,017 - $(name)s - ERROR - Error sending computer to Odoo: No connection adapters were found for '192.168.50.165:8069'
+2025-12-19 10:25:38,017 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:25:38,017 - $(name)s - INFO - Database conection closed
+2025-12-19 10:26:48,018 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:26:48,020 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:26:48,020 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:26:48,021 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:26:48,022 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:26:48,024 - $(name)s - ERROR - Error sending computer to Odoo: No connection adapters were found for '192.168.50.165:8069/json/2/assets_computer/batch_update'
+2025-12-19 10:26:48,024 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:26:48,024 - $(name)s - INFO - Database conection closed
+2025-12-19 10:27:53,661 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:27:53,663 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:27:53,663 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:27:53,664 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:27:53,665 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:27:53,671 - $(name)s - ERROR - Error sending computer to Odoo: HTTPConnectionPool(host='odoo.artehnis.local', port=80): Max retries exceeded with url: /json/2/assets_computer/batch_update (Caused by NameResolutionError("<urllib3.connection.HTTPConnection object at 0x7f4f30e90040>: Failed to resolve 'odoo.artehnis.local' ([Errno -3] Temporary failure in name resolution)"))
+2025-12-19 10:27:53,671 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:27:53,671 - $(name)s - INFO - Database conection closed
+2025-12-19 10:28:59,169 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:28:59,171 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:28:59,172 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:28:59,173 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:28:59,175 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:28:59,741 - $(name)s - INFO - Sucesfully sent computers to Odoo
+2025-12-19 10:28:59,743 - $(name)s - ERROR - Could not mark changes are processed:'OCSQueries' object has no attribute 'sb'
+2025-12-19 10:28:59,743 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:28:59,743 - $(name)s - INFO - Database conection closed
+2025-12-19 10:30:34,780 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:30:34,781 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:30:34,782 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:30:34,782 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:30:34,784 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:30:34,832 - $(name)s - INFO - Sucesfully sent computers to Odoo
+2025-12-19 10:30:34,834 - $(name)s - ERROR - Database error: (1146, "Table 'ocsweb.hardware_update' doesn't exist")
+2025-12-19 10:30:34,835 - $(name)s - INFO - Sync complete: 0 sent, 1 failed
+2025-12-19 10:30:34,835 - $(name)s - INFO - Database conection closed
+2025-12-19 10:32:03,907 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:32:03,909 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:32:03,911 - $(name)s - INFO - Got 1 pending changes
+2025-12-19 10:32:03,912 - $(name)s - INFO - Found 1 computers with changes
+2025-12-19 10:32:03,913 - $(name)s - INFO - Sending 1 computers to Odoo
+2025-12-19 10:32:03,957 - $(name)s - INFO - Sucesfully sent computers to Odoo
+2025-12-19 10:32:03,959 - $(name)s - INFO - Marked [1] as processed
+2025-12-19 10:32:03,978 - $(name)s - INFO - Sync complete: 1 sent, 0 failed
+2025-12-19 10:32:03,978 - $(name)s - INFO - Database conection closed
+2025-12-19 10:32:07,624 - $(name)s - INFO - Starting OCS to Odoo transfer
+2025-12-19 10:32:07,626 - $(name)s - INFO - Database connection succesfull
+2025-12-19 10:32:07,626 - $(name)s - INFO - Got 0 pending changes
+2025-12-19 10:32:07,626 - $(name)s - INFO - No pending Changes
+2025-12-19 10:32:07,627 - $(name)s - INFO - Database conection closed
