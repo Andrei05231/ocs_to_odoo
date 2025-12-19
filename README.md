@@ -28,7 +28,7 @@ Monitors OCS Inventory database changes via MySQL triggers and automatically pus
 
 ```bash
 # Clone and setup
-git clone <repository-url>
+git clone https://github.com/Andrei05231/ocs_to_odoo.git
 cd ocs_to_odoo
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
