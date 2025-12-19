@@ -36,6 +36,8 @@ class OdooClient:
 
             if response.status_code in [200,201,202]:
                 logger.info(f"Sucesfully sent computers to Odoo")
+                if response.json()['summary']['not_found']>0:
+                    logger.warning(f'Some computers were not found {response.json()["summary"]}')
                 return True
             else:
                 logger.error(f"Could not send computers to Odoo: {e}")
