@@ -8,7 +8,7 @@ CREATE TRIGGER videos_after_update
 AFTER UPDATE ON videos
 FOR EACH ROW
 BEGIN
-	IF NOT (OLD.NAME<=>NEW.NAME)
+	IF NOT (OLD.NAME<=>NEW.NAME) THEN
 		INSERT INTO hardware_updates(
 			hardware_id,
 			table_name,
@@ -20,12 +20,12 @@ BEGIN
 			'videos',
 			'UPDATE',
 			JSON_OBJECT(
-				'name':OLD.NAME,
-				'memory':OLD.MEMORY
+				'name',OLD.NAME,
+				'memory',OLD.MEMORY
 			),
 			JSON_OBJECT(
-				'name': NEW.NAME,
-				'memory': NEW.MEMORY
+				'name', NEW.NAME,
+				'memory', NEW.MEMORY
 			)
 		);
 
@@ -51,8 +51,8 @@ BEGIN
 		'INSERT',
 		NULL,
 		JSON_OBJECT(
-			'name':NEW.NAME,
-			'memory':NEW.MEMORY
+			'name',NEW.NAME,
+			'memory',NEW.MEMORY
 		)
 	);
 
@@ -77,8 +77,8 @@ BEGIN
 		'videos',
 		'DELETE',
 		JSON_OBJECT(
-			'name':OLD.NAME,
-			'memory':OLD.MEMORY
+			'name',OLD.NAME,
+			'memory',OLD.MEMORY
 		),
 		NULL
 	);
