@@ -46,7 +46,7 @@ BEGIN
 		old_data,
 		new_data
 	) VALUES(
-		HARDWARE_ID,
+		NEW.HARDWARE_ID,
 		'videos',
 		'INSERT',
 		NULL,
@@ -73,7 +73,7 @@ BEGIN
 		old_data,
 		new_data
 	) VALUES (
-		HARDWARE_ID,
+		OLD.HARDWARE_ID,
 		'videos',
 		'DELETE',
 		JSON_OBJECT(
