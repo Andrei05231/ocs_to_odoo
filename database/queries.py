@@ -80,6 +80,19 @@ class OCSQueries:
             cursor.execute(query, hardware_id)
             return cursor.fetchall()
 
+    def get_monitor_info(self, hardware_id ):
+        with self.db.cursor() as cursor:
+            query = """
+                SELECT CAPTION as name, 
+                DESCRIPTION as model, 
+                SERIAL as serial
+                FROM monitors 
+                WHERE HARDWARE_ID = %s 
+            """
+            cursor.execute(query, hardware_id)
+            return cursor.fetchall()
+            
+
     def get_computer_info(self, hardware_id):
         try:
             hardware = self.get_hardware_info(hardware_id)
@@ -89,8 +102,9 @@ class OCSQueries:
             bios = self.get_bios_info(hardware_id)
             video = self.get_video_info(hardware_id)
             memory = self.get_memory_info(hardware_id)
+            monitors = self.get_monitor_info(hardware_id)
 
-            return Computer.process_ocs_data(hardware, bios,video,memory)
+            return Computer.process_ocs_data(hardware, bios, video, memory, monitors)
         
         except Exception as e :
             logger.error(f"Could not get computer info for : {hardware_id}:{e}")

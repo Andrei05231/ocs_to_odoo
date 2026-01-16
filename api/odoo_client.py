@@ -26,6 +26,7 @@ class OdooClient:
                 }
 
             logger.info(f"Sending {len(computers)} computers to Odoo")
+            logger.info(f"DATA: \n {payload} ")
 
             response = requests.post(
                 self.config.host,

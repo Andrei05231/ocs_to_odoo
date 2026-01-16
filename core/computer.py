@@ -9,6 +9,7 @@ class Computer:
     cpu:str
     gpu:str
     memory:str
+    monitors:object
 
     def format_for_odoo(self):
         return {
@@ -16,7 +17,8 @@ class Computer:
             'serialNumber':self.serial_number,
             'cpu':self.cpu,
             'gpu':self.gpu,
-            'memory':self.memory
+            'memory':self.memory,
+            'monitors':self.monitors
         }
     
     @staticmethod
@@ -27,8 +29,22 @@ class Computer:
 
         return ', '.join(gpus)
 
+    @staticmethod
+    def process_monitor_data(monitor_data):
+        monitors = []
+        for monitor in monitor_data:
+            mnt = { 
+                    'name' : monitor.get('name', ''),
+                    'model' : monitor.get('model',''),
+                    'serial' : monitor.get('serial','')
+                    }
+            monitors.append(mnt)
+
+        return monitors
+            
+
     @classmethod
-    def process_ocs_data( cls, hardware_data, bios_data, video_data, memory_data ):
+    def process_ocs_data( cls, hardware_data, bios_data, video_data, memory_data, monitor_data):
         memory_str = ''
         if memory_data:
             stick_groups = Counter()
@@ -49,5 +65,6 @@ class Computer:
             serial_number = bios_data.get('serialNumber',''),
             cpu = hardware_data.get('cpu',''),
             gpu = cls.process_video_data(video_data),
-            memory = memory_str
+            memory = memory_str,
+            monitors = cls.process_monitor_data(monitor_data)
             )
