@@ -351,10 +351,6 @@ Check Odoo logs for endpoint errors. Common issues:
 
 **Planned Features**:
 - [ ] Storage device tracking
-- [ ] Network adapter information
-- [ ] BIOS version tracking
-- [ ] Automated trigger deployment
-- [ ] Webhook support for instant updates
 - [ ] Conflict resolution for simultaneous changes
 
 ## Security Notes
