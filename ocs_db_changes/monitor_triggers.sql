@@ -2,14 +2,13 @@
 
 DELIMITER $$
 
-DROP TRIGGER IF EXISTS monitors_after_update &&
+DROP TRIGGER IF EXISTS monitors_after_update$$
 
 CREATE TRIGGER monitors_after_update
 AFTER UPDATE ON monitors 
 FOR EACH ROW 
 BEGIN 
-	IF NOT ( OLD.CAPTION <=> NEW.CAPTION) AND
-	NOT (OLD.SERIAL <=> NEW.SERIAL) THEN
+	IF NOT ( OLD.CAPTION <=> NEW.CAPTION AND OLD.SERIAL <=> NEW.SERIAL AND OLD.TYPE<=>NEW.TYPE) THEN
 		INSERT INTO hardware_updates(
 			hardware_id,
 			table_name,
@@ -34,7 +33,9 @@ BEGIN
 END$$
 
 
-DROP TRIGGER IF EXISTS monitors_after_instert&&
+DROP TRIGGER IF EXISTS monitors_after_insert$$
+
+CREATE TRIGGER monitors_after_insert
 AFTER INSERT ON monitors
 FOR EACH ROW 
 BEGIN
@@ -47,7 +48,7 @@ BEGIN
 
 	) VALUES (
 		NEW.HARDWARE_ID,
-		'monitors'.
+		'monitors',
 		'INSERT',
 		NULL,
 		JSON_OBJECT(
@@ -55,10 +56,12 @@ BEGIN
 			'serial',NEW.SERIAL
 		)
 	);
-END&&
+END$$
 
 
-DROP TRIGGER IF EXISTS monitors_after_delete
+DROP TRIGGER IF EXISTS monitors_after_delete$$
+
+CREATE TRIGGER monitors_after_delete
 AFTER DELETE ON monitors
 FOR EACH ROW 
 BEGIN
