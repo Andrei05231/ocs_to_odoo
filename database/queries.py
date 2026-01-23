@@ -87,7 +87,8 @@ class OCSQueries:
                 DESCRIPTION as model, 
                 SERIAL as serial
                 FROM monitors 
-                WHERE HARDWARE_ID = %s 
+                WHERE HARDWARE_ID = %s AND
+                CAPTION <> "" AND CAPTION IS NOT NULL
             """
             cursor.execute(query, hardware_id)
             return cursor.fetchall()
